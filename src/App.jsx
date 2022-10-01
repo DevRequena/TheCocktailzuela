@@ -1,13 +1,34 @@
 import { useState } from 'react'
 import { Header } from './components/Header'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { Home } from './Pages';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-    <Header/>
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+        {/* Estructura para asignar un nuevo componente */}
+        {/* <Route path="/">
+          <Contact />
+        </Route>
+        <Route path="/contact">
+          <AllContacts />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route> */}
+      </Switch>
     </>
   )
 }
