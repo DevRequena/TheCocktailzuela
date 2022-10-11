@@ -12,7 +12,10 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.nameHomeContainer}>
-        <div className={styles.logo}>The Cocktailzuela</div>
+        <div className={styles.nameProducto}>
+          <img className={styles.imgNavbar} src="../../Imagenes/logo.png" alt="" />
+          <div className={styles.logo}>The Cocktailzuela</div>
+        </div>
         <div className={styles.homeSearch}>
           <div className={styles.home}> Home </div>
           <div><input type="text" className={styles.search} placeholder="Buscar Cocteles" /></div>
