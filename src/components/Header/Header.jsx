@@ -11,8 +11,28 @@ const Header = () => {
 
   return (
     <div className={styles.header}>
-      Header
-     </div>
+      <div className={styles.nameHomeContainer}>
+        <div className={styles.logo}>The Cocktailzuela</div>
+        <div className={styles.homeSearch}>
+          <div className={styles.home}> Home </div>
+          <div><input type="text" className={styles.search} placeholder="Buscar Cocteles" /></div>
+        </div>
+      </div>
+      <div className={styles.ingredientsContent}>
+          <div className={styles.ingredient}>
+            <a className={styles.ladilla} href='www.vodka.com'>Vodka</a>
+          </div>
+          <div className={styles.ingredient}>
+            <a className={styles.ladilla} href='www.Gin.com'>Gin </a>
+          </div>
+          <div className={styles.ingredient}>
+            <a className={styles.ladilla} href='www.Rum.com'>Rum</a>
+          </div>
+          <div className={styles.ingredient}>
+            <a className={styles.ladilla} href='www.Tequila.com'>Tequila</a>
+          </div>
+      </div>
+    </div>
   )
 };
 
