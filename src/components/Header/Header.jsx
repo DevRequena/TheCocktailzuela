@@ -14,7 +14,7 @@ const Header = () => {
       <div className={styles.nameHomeContainer}>
         <div className={styles.nameProducto}>
           <img className={styles.imgNavbar} src="../../Imagenes/logo.png" alt="" />
-          <div className={styles.logo}>The Cocktailzuela</div>
+          <div className={styles.logo}>The Cocktailzuela.</div>
         </div>
         <div className={styles.homeSearch}>
           <div className={styles.home}> Home </div>
